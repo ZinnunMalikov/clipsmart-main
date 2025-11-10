@@ -1,0 +1,121 @@
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #f8f9fa;
+}
+
+.tab-pane {
+    -fx-tab-min-width: 120px;
+    -fx-tab-max-width: 120px;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #e9ecef;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #dee2e6;
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-border-color: #adb5bd;
+    -fx-border-width: 1px 1px 0 1px;
+    -fx-padding: 8px 16px;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #007bff;
+    -fx-border-width: 2px 2px 0 2px;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #495057;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #007bff;
+}
+
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.button:pressed {
+    -fx-background-color: #004085;
+}
+
+
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e1e5e9;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-font-family: "SF Mono", "Monaco", "Consolas", "Courier New", monospace;
+    -fx-font-size: 13px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 4, 0, 0, 1);
+}
+
+.text-area:focused {
+    -fx-border-color: #007bff;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,123,255,0.2), 8, 0, 0, 2);
+}
+
+.text-area .content {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px;
+}
+
+.label {
+    -fx-text-fill: #343a40;
+    -fx-font-weight: 500;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: linear-gradient(to bottom, #ffffff 0%, #fafbfc 100%);
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 0 0 12px 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-padding: 3px 0 0 0;
+}
+
+.vbox {
+    -fx-spacing: 18px;
+    -fx-padding: 20px;
+}
+
+.success-label {
+    -fx-text-fill: #28a745;
+    -fx-font-weight: 600;
+    -fx-effect: dropshadow(gaussian, rgba(40,167,69,0.2), 4, 0, 0, 1);
+}
+
+.error-label {
+    -fx-text-fill: #dc3545;
+    -fx-font-weight: 600;
+    -fx-effect: dropshadow(gaussian, rgba(220,53,69,0.2), 4, 0, 0, 1);
+}
+
+.download-button {
+    -fx-background-color: linear-gradient(to bottom, #28a745 0%, #1e7e34 100%);
+    -fx-effect: dropshadow(gaussian, rgba(40,167,69,0.3), 6, 0, 0, 2);
+}
+
+.download-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #1e7e34 0%, #155724 100%);
+    -fx-effect: dropshadow(gaussian, rgba(40,167,69,0.4), 8, 0, 0, 3);
+}

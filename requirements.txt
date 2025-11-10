@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+google-generativeai
+pillow
+pyautogui
+boto3
+pymongo
