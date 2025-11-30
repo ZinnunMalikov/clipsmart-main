@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clipsmart"
+version = "1.0.0"
+description = "Smart clipboard processing with AI-powered classification and conversion"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "ClipSmart Team", email = "contact@clipsmart.dev"}
+]
+keywords = ["clipboard", "ai", "fastapi", "latex", "processing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Office/Business",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "google-generativeai",
+    "pillow",
+    "pyautogui",
+    "boto3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "black",
+    "flake8",
+    "mypy",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/clipsmart"
+Documentation = "https://github.com/yourusername/clipsmart#readme"
+Repository = "https://github.com/yourusername/clipsmart.git"
+"Bug Tracker" = "https://github.com/yourusername/clipsmart/issues"
+
+[project.scripts]
+clipsmart = "backend.processing.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*"]
+
+[tool.setuptools.package-data]
+"backend.app" = ["resources/*"]
